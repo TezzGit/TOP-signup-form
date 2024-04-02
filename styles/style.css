@@ -93,3 +93,38 @@ textarea:not([rows]) {
 
 
 /* My Styling */
+body {
+    background-color: rgb(143, 143, 143);
+}
+
+#container {
+    display: flex;
+}
+
+#left-container {
+    flex: 1;
+    background-image: url(../img/luke-miller-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+}
+
+#logo {
+    display:flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-img {
+    height: 75px;
+}
+
+#logo-text {
+    font-size: 48px;
+}
+
+#right-container {
+    flex: 0;
+}
