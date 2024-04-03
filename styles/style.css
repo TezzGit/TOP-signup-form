@@ -90,6 +90,11 @@ textarea:not([rows]) {
     scroll-margin-block: 5ex;
 }
 
+@font-face {
+    font-family: "Norse-Bold";
+    src: url(../fonts/Norse-Bold.otf);
+}
+
 
 /* My Styling */
 body {
@@ -131,6 +136,7 @@ body {
 
 #logo-text {
     font-size: 4rem;
+    font-family: "Norse-Bold", Arial;
 }
 
 #logo-img {
