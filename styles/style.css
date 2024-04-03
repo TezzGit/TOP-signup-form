@@ -36,7 +36,6 @@ ol[role='list'] {
 
 /* Set core body defaults */
 body {
-    min-height: 100vh;
     line-height: 1.5;
 }
 
@@ -95,10 +94,18 @@ textarea:not([rows]) {
 /* My Styling */
 body {
     background-color: rgb(143, 143, 143);
+    display: flex;
+    align-items: stretch;
+    min-height: calc(100vh - 16px);
+    justify-content: center;
 }
 
 #container {
+    margin: 64px;
     display: flex;
+    background-color: white;
+    align-items: stretch;
+    flex: 1;
 }
 
 #left-container {
@@ -107,24 +114,38 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    display: flex;
+    flex-direction: column;
     color: white;
+    justify-content: space-between;
 }
 
 #logo {
-    display:flex;
-    background-color: rgba(0, 0, 0, 0.3);
-    justify-content: center;
+    display: flex;
     align-items: center;
-}
-
-#logo-img {
-    height: 75px;
+    background-color: rgba(70, 70, 70, 0.356);
+    justify-content: center;
+    position: relative;
+    top: 200px;
 }
 
 #logo-text {
-    font-size: 48px;
+    font-size: 4rem;
+}
+
+#logo-img {
+    width: 5rem;
+}
+
+#credits {
+    align-self: center;
 }
 
 #right-container {
-    flex: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1.5;
+    padding: 32px;
 }
