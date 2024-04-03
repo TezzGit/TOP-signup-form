@@ -30,35 +30,35 @@
             </div>
             <div id="right-two">
                 <div class="form-title">Lets do this!</div>
-                <form action="">
-                        <div class="field">
-                            <label for="first-name">First Name</label>
-                            <input type="text" id="first-name" name="first-name" required>
-                        </div>
-                        <div class="field">
-                            <label for="last-name">Last Name</label>
-                            <input type="text" id="last-name" name="last-name" required>
-                        </div>
-                        <div class="field">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="field">
-                            <label for="phone-number">Phone Number</label>
-                            <input type="text" id="phone-number" name="phone-number">
-                        </div>
-                        <div class="field">
-                            <label for="user-password">Enter a Password</label>
-                            <input type="password" id="user-password" name="user-password" required>
-                        </div>
-                        <div class="field">
-                            <label for="confirm-password">Confirm Password</label>
-                            <input type="password" id="confirm-password" name="confirm-password" required>
-                        </div>
+                <form id="signup-form" action="">
+                    <div class="field">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="field">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" id="phone-number" name="phone-number" pattern="((\d{2})?\d{8})">
+                    </div>
+                    <div class="field">
+                        <label for="user-password">Enter a Password</label>
+                        <input type="password" id="user-password" name="user-password" required>
+                    </div>
+                    <div class="field">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
                 </form>
             </div>
             <div id="right-three">
-                <button type="submit">Create Account</button>
+                <button type="submit" form="signup-form">Create Account</button>
                 <p>Already have an account? <a href="" target="_blank">Log in</a></p>
             </div>
         </div>
